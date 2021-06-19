@@ -13,7 +13,7 @@ contract Flashloan is ICallee, DydxFlashloanBase {
     enum Direction { KyberToUniswap, UniswapToKyber } 
     struct ArbInfo {
         Direction direction;
-        uint256 repayAmount;
+        uint repayAmount;
     }
 
     event NewArbitrage (
